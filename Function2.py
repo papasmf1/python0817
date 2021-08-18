@@ -45,5 +45,6 @@ def union(*ar):
     return result
 
 #호출
+#디버깅 모드면 중단~~ (Break Point)
 print( union("HAM","EGG") )
 print( union("HAM","EGG","SPAM") )

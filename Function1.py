@@ -29,3 +29,29 @@ def intersect(prelist, postlist):
 #함수 호출
 print( intersect("HAM","SPAM") )
 
+#불변형식
+print("---불변형식---")
+a = 1.2 
+print( id(a) )
+a = 2.3
+print( id(a) )
+
+#가변형식
+print("---가변형식---")
+lst = [1,2,3]
+print( id(lst) )
+lst.append(4)
+print( id(lst) )
+
+#Pass By Reference 
+wordlist = ["J","A","M"]
+def change(x):
+    #지역변수로 복사
+    x1 = x[:]
+    x1[0] = "H"
+    print("함수내부:", x1)
+    
+#함수 호출
+change(wordlist)
+print("함수 호출후:", wordlist)
+

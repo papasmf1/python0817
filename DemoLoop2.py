@@ -11,3 +11,19 @@ print( [len(i) for i in tp] )
 d = {100:"apple", 200:"orange", 300:"kiwi"}
 print( [v.upper() for v in d.values()] )
 
+print("---필터링---")
+lst = [10, 25, 30]
+iterL = filter(None, lst)
+for item in iterL:
+    print(item)
+
+print("---필터링---")
+#필터링하는 함수 정의
+def getBiggerThan20(i):
+    return i > 20 
+
+#필터링
+iterL = filter(getBiggerThan20, lst)
+for item in iterL:
+    print(item)
+

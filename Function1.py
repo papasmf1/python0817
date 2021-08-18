@@ -50,8 +50,24 @@ def change(x):
     x1 = x[:]
     x1[0] = "H"
     print("함수내부:", x1)
-    
+
 #함수 호출
 change(wordlist)
 print("함수 호출후:", wordlist)
 
+#지역변수->전역변수->빌트인상수(LGB 이름해석규칙) 
+#전역변수
+x = 5 
+def func1(a):
+    return x+a
+
+#호출
+print( func1(1) )
+
+def func2(a):
+    #지역변수
+    x = 1 
+    return x+a 
+
+#호출
+print( func2(1) )

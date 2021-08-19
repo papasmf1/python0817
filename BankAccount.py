@@ -34,7 +34,11 @@ print(account1)
 #인스턴스에 추가
 account1.balance = 1500 
 print(account1.balance)
-print(account2.balance)
+#print(account2.balance)
 
+print( account1.__dict__ ) 
+print( account2.__dict__ ) 
+print( BankAccount.__dict__ ) 
+print( dir() )
 
 

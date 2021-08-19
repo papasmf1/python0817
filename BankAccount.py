@@ -22,6 +22,7 @@ class BankAccount:
 
 #인스턴스 객체를 생성
 account1 = BankAccount(100, "전우치", 15000)
+account2 = BankAccount(200, "이순신", 20000)
 account1.deposit(5000)
 account1.withdraw(3000)
 #외부에서 접근 
@@ -29,6 +30,11 @@ account1.withdraw(3000)
 #이름 변경(백도어)
 print(account1._BankAccount__balance) 
 print(account1)
+
+#인스턴스에 추가
+account1.balance = 1500 
+print(account1.balance)
+print(account2.balance)
 
 
 

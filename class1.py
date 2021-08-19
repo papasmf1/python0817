@@ -12,9 +12,12 @@ class Person:
 p1 = Person()
 p2 = Person() 
 p1.name = "전우치"
+#런타임(실행시간)시에 변수를 추가<--->디자인타임(코딩중)
+Person.title = "new title"
 
-p1.print()
-p2.print() 
+print( p1.title )
+print( p2.title )
+print( Person.title )
 
 
 

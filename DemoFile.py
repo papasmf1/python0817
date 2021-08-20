@@ -27,7 +27,21 @@ f.close()
 
 #파일을 읽기 
 f = open("c:\\work\\demo.txt", "rt")
-print( f.read() )
+#하나의 문자열 변수로 전체를 리턴 
+result = f.read()
+print(result)
+#어디쯤? 
+print( f.tell() )
+#처음으로 돌아가(리셋)
+f.seek(0)
+print( f.readline() )
+print( f.readline() )
+f.seek(0)
+print("---리스트객체---")
+lst = f.readlines()
+print( lst )
+for item in lst:
+    print(item.replace("\n", ""))
 
 f.close() 
 

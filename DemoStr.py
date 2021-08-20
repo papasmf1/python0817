@@ -15,4 +15,18 @@ print( "python is powerful".capitalize() )
 print( "python is powerful".count("p") )
 print( "python is powerful".count("p", 7) )
 
+#숫자인지, 문자열인지? 
+print( "MBC2580".isalnum() )
+print( "MBC:2580".isalnum() )
+print( "2580".isdecimal() )
+
+#문자열의 길이
+print( len("한글") )
+
+print("---앞뒤의 공백문자 제거---")
+u = "<<<  spam and ham  >>>"
+print(u)
+result = u.strip("<> ")
+print(result)
+
 

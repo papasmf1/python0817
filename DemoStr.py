@@ -28,5 +28,13 @@ u = "<<<  spam and ham  >>>"
 print(u)
 result = u.strip("<> ")
 print(result)
+#치환
+result = result.replace("spam", "spam egg")
+print(result)
+#리스트로 받기
+lst = result.split() 
+print( lst )
+print("---문자열로 합치기---")
+print( ":)".join(lst) )
 
 

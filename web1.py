@@ -11,8 +11,16 @@ soup = BeautifulSoup(page, "html.parser")
 #print( soup.find_all("p") )
 
 #<p class="outer-text">컨텐츠</p>: 필터링
-print( soup.find_all("p", class_="outer-text") )
+#print( soup.find_all("p", class_="outer-text") )
 
+#첫번째 <p>태그만 검색
+#print( soup.find("p") )
+
+#태그 내부의 컨텐츠만 검색
+for item in soup.find_all("p"):
+    title = item.text.strip() 
+    title = title.replace("\n", "")
+    print(title)
 
 
 

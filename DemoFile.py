@@ -20,6 +20,15 @@ print("{0:e}".format(4/3))
 print("{0:f}".format(4/3))
 print("{0:.2f}".format(4/3))
 
+#파일을 생성해서 쓰기
+f = open("c:\\work\\demo.txt", "wt")
+f.write("한글\nabcd\n1234\n")
+f.close()
 
+#파일을 읽기 
+f = open("c:\\work\\demo.txt", "rt")
+print( f.read() )
+
+f.close() 
 
 
